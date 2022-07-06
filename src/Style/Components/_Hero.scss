@@ -1,0 +1,115 @@
+.Hero {
+    background-image: url("../Img/Mask\ Group\ 1.png");
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: #14141485;
+        z-index: 100;
+    }
+
+    .container {
+        z-index: 150;
+        width: 80%;
+        height: 60%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        color: $white;
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            width: 50%;
+            line-height: 4rem;
+            text-transform: capitalize;
+            margin: .8rem;
+            margin-bottom: 4rem;
+        }
+
+        p {
+            margin: 1rem;
+            width: 50%;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        .button {
+            button {
+                padding: 1rem 2rem;
+                background-color: $blue;
+                outline: none;
+                border: none;
+                border-radius: 2rem;
+                color: $white;
+                margin: 1rem;
+                cursor: pointer;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+                &:hover {
+                    transition: all .3s;
+                    background-color: $white;
+                    color: $blue;
+                }
+            }
+        }
+
+        .bottom-show {
+            position: absolute;
+            width: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            bottom: 2rem;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, 50%);
+            z-index: 1000;
+
+            .radio-dark,
+            .radio-light {
+                width: 1rem;
+                height: 1rem;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .radio-dark {
+                background-color: $blue;
+            }
+
+
+            .radio-light {
+
+                background-color: rgb(1, 34, 78);
+
+
+            }
+        }
+
+
+    }
+
+    .bottom-dark-shadow {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 8rem;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 1%, rgba(255, 255, 255, 0) 67%);
+        z-index: 100;
+
+    }
+}

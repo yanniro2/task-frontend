@@ -1,0 +1,61 @@
+.Menu {
+    position: fixed;
+    z-index: 2000;
+    background-color: $blue;
+    width: 100vw;
+    height: 100vh;
+
+    ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        list-style: none;
+        text-decoration: none;
+
+        li {
+            width: 15rem;
+            margin: 0 auto;
+            display: block;
+        }
+
+        li a {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-decoration: none;
+            font-size: 1.5rem;
+            text-align: left;
+            color: $white;
+            font-weight: 400;
+            padding: 1rem;
+            border: 2px solid $blue;
+
+            &:hover {
+                transition: all .3s;
+                border: 2px solid $white;
+                background-color: $white;
+                color: $blue;
+
+            }
+        }
+
+    }
+
+    .close {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+        color: $white;
+        cursor: pointer;
+
+        &:hover {
+            transition: all .3s;
+            color: $light-blue;
+        }
+    }
+}

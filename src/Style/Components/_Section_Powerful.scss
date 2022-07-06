@@ -1,0 +1,148 @@
+.Section_Powerful {
+    width: 80%;
+    height: 100%;
+    margin: 2rem auto;
+    color: $white;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .icon-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 4rem 0;
+
+        .icons {
+
+            width: 10rem;
+            height: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: $red;
+            background-color: $gray;
+            border-radius: 2rem;
+            flex-direction: column;
+
+            p {
+                font-size: 1rem;
+                color: $white;
+                margin-top: .5rem;
+                font-weight: 300;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .details {
+        width: 100%;
+
+        h3 {
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+
+        .text {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            font-size: 1rem;
+            font-weight: 200;
+
+            p {
+                width: 48%;
+            }
+
+        }
+
+        button {
+            margin-top: 4rem;
+            display: block;
+            background-color: $blue;
+            padding: 1rem 6rem;
+            border-radius: 2rem;
+            text-transform: capitalize;
+            color: $white;
+            margin: 1rem 0;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                transition: all .3s;
+                background-color: $white;
+                color: $blue;
+            }
+        }
+    }
+
+    .table {
+        width: 100%;
+
+        h3 {
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+
+        table {
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse;
+            font-size: .9rem;
+            text-align: left;
+
+            thead {
+                background-color: $blue;
+
+                tr:first-child th:first-child {
+                    border-top-left-radius: 10px;
+                }
+
+                tr:first-child th:last-child {
+                    border-top-right-radius: 10px;
+                }
+
+            }
+
+            tr:nth-child(even) {
+                background-color: $light-gary;
+            }
+
+            tbody {
+                background-color: $white;
+                color: $black;
+                border: none;
+
+                tr {
+                    &:hover {
+                        transition: all .3s;
+                        color: $white;
+                        background-color: $red;
+                        cursor: pointer;
+
+                    }
+                }
+            }
+
+            th,
+            td {
+                padding: 1rem 2rem;
+            }
+
+
+            tr:last-child td:first-child {
+                border-bottom-left-radius: 10px;
+            }
+
+            tr:last-child td:last-child {
+                border-bottom-right-radius: 10px;
+            }
+
+
+
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.Header {
+    display: flex;
+    background-color: $blue;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 8rem;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+
+
+    .logo-icon {
+        width: 3rem;
+        height: auto;
+    }
+
+    .menu-nav {
+        align-self: flex-end;
+        padding-top: 5rem;
+        height: 100%;
+        width: 70%;
+        margin-left: 4rem;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: $white;
+
+            &:hover {
+                transition: all .3s;
+                color: $light-blue;
+            }
+        }
+    }
+
+    .display {
+        display: none;
+
+    }
+
+
+
+}
